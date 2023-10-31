@@ -8,7 +8,11 @@ def encode_password(password):
 
 
 def decode_password(password):
-	pass
+	string_password = ""
+	for element in password:
+		int_password = (int(element) - 3)%10
+		string_password += str(int_password)
+	return string_password
 
 
 def main():
